@@ -6,7 +6,9 @@
   "scripts": {
     "build": "react-router build",
     "start": "react-router dev",
-    "deploy": "wrangler pages deploy ./build/client",
+    "deploy:pages": "wrangler pages deploy ./build/client",
+    "deploy:worker": "wrangler deploy --config wrangler.worker.toml",
+    "deploy": "npm run deploy:pages && npm run deploy:worker",
     "lint": "prettier --check .",
     "format": "prettier --write .",
     "typecheck": "react-router typegen && tsc",
