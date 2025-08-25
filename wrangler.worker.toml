@@ -1,10 +1,9 @@
-name = "dispoflare"
+name = "dispoflare-worker"
 
 # workers_dev = true
 main = "workers/index.ts"
 # https://developers.cloudflare.com/workers/platform/compatibility-dates
 compatibility_date = "2024-03-26"
-pages_build_output_dir = "./build/client"
 
 [vars]
 # The necessary secrets are:
